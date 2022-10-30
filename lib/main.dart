@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
-import 'package:riverpod_basic/src/home/view/home_page.dart';
+import 'package:riverpod_basic/src/counter/counter_page.dart';
+import 'package:riverpod_basic/src/home/home_page.dart';
 
 void main() {
   runApp(const ProviderScope(
@@ -17,7 +18,11 @@ class MyApp extends StatelessWidget {
       title: 'RiverPod Basic',
       debugShowCheckedModeBanner: false,
       theme: ThemeData.dark(),
-      home: const HomePage(),
+      initialRoute: '/counter',
+      routes: {
+        '/home': (context) => const HomePage(),
+        '/counter': (context) => const CounterPage(),
+      },
     );
   }
 }
