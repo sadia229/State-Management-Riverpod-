@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:hooks_riverpod/hooks_riverpod.dart';
-import 'package:riverpod_basic/src/home/controller/home_controller.dart';
+import 'package:riverpod_basic/src/home/home_controller.dart';
 import 'package:riverpod_basic/style/k_text_style.dart';
 
 class HomePage extends ConsumerWidget {
